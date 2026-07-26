@@ -1,0 +1,17 @@
+DATA QUALITY SUMMARY - Day 1
+========================================
+
+01_fund_master: shape=(40, 15), nulls=0, duplicates=0
+02_nav_history: shape=(46000, 3), nulls=0, duplicates=0
+03_aum_by_fund_house: shape=(90, 5), nulls=0, duplicates=0
+04_monthly_sip_inflows: shape=(48, 6), nulls=12, duplicates=0
+05_category_inflows: shape=(144, 3), nulls=0, duplicates=0
+06_industry_folio_count: shape=(21, 6), nulls=0, duplicates=0
+07_scheme_performance: shape=(40, 19), nulls=0, duplicates=0
+08_investor_transactions: shape=(32778, 13), nulls=0, duplicates=0
+09_portfolio_holdings: shape=(322, 8), nulls=0, duplicates=0
+10_benchmark_indices: shape=(8050, 3), nulls=0, duplicates=0
+
+fund_master unique codes: 40
+nav_history unique codes: 40
+codes missing from nav_history: 0
