@@ -12,7 +12,6 @@ dataframes = {}
 
 for path in csv_files:
     name = os.path.splitext(os.path.basename(path))[0]
-    print("=" * 70)
     print(f"FILE: {path}")
     df = pd.read_csv(path)
     dataframes[name] = df
@@ -44,7 +43,7 @@ if fund_master is not None and nav_history is not None:
     fm_codes = set(fund_master["amfi_code"].astype(str))
     nav_codes = set(nav_history["amfi_code"].astype(str))
     missing = fm_codes - nav_codes
-    print("=" * 70)
+    print()
     print(f"fund_master unique codes: {len(fm_codes)}")
     print(f"nav_history unique codes: {len(nav_codes)}")
     print(f"codes missing from nav_history: {len(missing)}")
@@ -57,7 +56,6 @@ if fund_master is not None and nav_history is not None:
 
 with open(os.path.join(REPORTS_DIR, "data_quality_summary.txt"), "w") as f:
     f.write("DATA QUALITY SUMMARY - Day 1\n")
-    f.write("=" * 40 + "\n\n")
     for name, df in dataframes.items():
         f.write(f"{name}: shape={df.shape}, nulls={int(df.isnull().sum().sum())}, "
                 f"duplicates={int(df.duplicated().sum())}\n")
