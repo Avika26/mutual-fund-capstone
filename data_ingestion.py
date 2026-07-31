@@ -42,6 +42,7 @@ if fund_master is not None and nav_history is not None:
     fm_codes = set(fund_master["amfi_code"].astype(str))
     nav_codes = set(nav_history["amfi_code"].astype(str))
     missing = fm_codes - nav_codes
+
     print(f"fund_master unique codes: {len(fm_codes)}")
     print(f"nav_history unique codes: {len(nav_codes)}")
     print(f"codes missing from nav_history: {len(missing)}")
