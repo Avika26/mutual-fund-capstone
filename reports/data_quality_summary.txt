@@ -1,6 +1,4 @@
 DATA QUALITY SUMMARY - Day 1
-========================================
-
 01_fund_master: shape=(40, 15), nulls=0, duplicates=0
 02_nav_history: shape=(46000, 3), nulls=0, duplicates=0
 03_aum_by_fund_house: shape=(90, 5), nulls=0, duplicates=0
@@ -11,6 +9,12 @@ DATA QUALITY SUMMARY - Day 1
 08_investor_transactions: shape=(32778, 13), nulls=0, duplicates=0
 09_portfolio_holdings: shape=(322, 8), nulls=0, duplicates=0
 10_benchmark_indices: shape=(8050, 3), nulls=0, duplicates=0
+nav_Axis_Bluechip_119092: shape=(3603, 4), nulls=0, duplicates=0
+nav_ICICI_Bluechip_120503: shape=(3345, 4), nulls=0, duplicates=0
+nav_Kotak_Bluechip_120841: shape=(3339, 4), nulls=0, duplicates=0
+nav_Nippon_Large_Cap_118632: shape=(3336, 4), nulls=0, duplicates=0
+nav_SBI_Bluechip_119551: shape=(3274, 4), nulls=0, duplicates=0
+nav_SBI_Small_Cap_125497: shape=(3129, 4), nulls=0, duplicates=0
 
 fund_master unique codes: 40
 nav_history unique codes: 40
