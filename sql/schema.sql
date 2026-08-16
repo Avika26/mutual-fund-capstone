@@ -65,9 +65,14 @@ CREATE TABLE fact_performance (
 );
 
 -- Fact: AUM by fund house over time
+-- Note: aum_crore is a known-mislabeled column (actually lakh-crore x 100,000,
+-- confirmed while building the Power BI dashboard — see Final_Report.pdf,
+-- Section 8.1). aum_lakh_crore is the correctly-scaled figure; use that one
+-- for any real AUM calculation, not aum_crore.
 CREATE TABLE fact_aum (
     date TEXT,
     fund_house TEXT,
     aum_crore INTEGER,
+    aum_lakh_crore REAL,
     num_schemes INTEGER
 );
